@@ -1,0 +1,80 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>
+      pole expertise comptable
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content>
+  <div style="margin-top: 10px; padding: 5px;">
+      <mat-accordion>
+          <mat-expansion-panel>
+            <mat-expansion-panel-header>
+              <mat-panel-title>
+                Participation à l’établissement des comptes annuels
+              </mat-panel-title>
+      
+            </mat-expansion-panel-header>
+      
+            <!-- contenu-->
+            <ul>
+              <li>L’établissement des comptes annuels (bilan, compte de résultat et annexes).</li>
+              <li>Tenue de la comptabilité.</li>
+              <li>Assistance comptable.</li>
+              <li>Établissement de comptes prévisionnels, business plan.</li>
+              <li>L’établissement du tableau de financement.</li>
+              <li>Mise en place et suivi de la comptabilité analytique.</li>
+              <li>L’établissement des comptes de groupes, consolidation des bilans et des comptes.</li>
+              <li>Établissement des tableaux de bord, des bilans et comptes de résultat.</li>
+              <li>Assistance des comités d’entreprise.</li>
+            </ul>
+            <!-- fin contenu -->
+          </mat-expansion-panel>
+      
+      
+          <!-- unit -->
+          <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
+            <mat-expansion-panel-header>
+              <mat-panel-title>
+                Révision des comptes
+              </mat-panel-title>
+      
+            </mat-expansion-panel-header>
+      
+            <ul>
+              <li>Révision contractuelle des comptes.</li>
+              <li>Révision légale des comptes.</li>
+              <li>Vérification des procédures de contrôle interne.</li>
+              <li>Révision préalable avant l’introduction en bourse.</li>
+            </ul>
+      
+      
+          </mat-expansion-panel>
+          <!--end unit-->
+          <!-- unit -->
+          <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
+            <mat-expansion-panel-header>
+              <mat-panel-title>
+                Expertise
+              </mat-panel-title>
+      
+            </mat-expansion-panel-header>
+      
+            <ul>
+              <li>Évaluation d’entreprises : cessions, apports, successions, partages, donations ou à la demande d’organismes
+                divers.</li>
+              <li>Expertise de gestion.</li>
+            </ul>
+      
+      
+          </mat-expansion-panel>
+          <!--end unit-->
+        </mat-accordion>
+      
+  </div>
+</ion-content>

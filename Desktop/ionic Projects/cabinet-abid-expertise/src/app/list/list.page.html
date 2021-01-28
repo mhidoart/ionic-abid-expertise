@@ -1,0 +1,51 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>
+        Nos services 
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <ion-item *ngFor="let item of servs" (click)="goToPage(item.note)" >
+      <ion-icon [name]="item.icon" slot="start" (click)="goToPage(item.note)"></ion-icon>
+      {{item.title}}
+      <div class="item-note" slot="end" (click)="goToPage(item.note)">
+      <!--  {{item.note}} -->
+      </div>
+    </ion-item>
+  </ion-list>
+  <!--
+    <div *ngIf="selectedItem" padding>
+      You navigated here from <b>{{selectedItem.title }}</b>
+    </div>
+  -->
+  <!-- 
+  <ion-card class="welcome-card">
+        
+    <ion-card-content style="max-height: 500px; overflow-y: scroll;">
+        <div class="example-container" >
+            <mat-form-field style="width: 100%; margin: 10px;">
+              <input matInput placeholder="Nom">
+            </mat-form-field>
+            <mat-form-field style="width: 100%; margin: 10px;">
+                <input matInput placeholder="Email">
+              </mat-form-field>
+            <mat-form-field style="width: 100%; margin: 10px;">
+              <textarea matInput placeholder="Message" rows="5" cols="40" ></textarea>
+            </mat-form-field>
+            <div style="text-align: center;">
+                <button mat-raised-button color="primary">Primary
+                    <mat-icon>send</mat-icon>
+                      </button>
+            </div>
+          </div>
+     
+    </ion-card-content>
+  </ion-card>
+-->
+</ion-content>

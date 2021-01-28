@@ -1,0 +1,7 @@
+{
+  "name": "cabinet-abid-expertise",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}

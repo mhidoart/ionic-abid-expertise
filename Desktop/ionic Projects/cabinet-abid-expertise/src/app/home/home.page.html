@@ -1,0 +1,112 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>
+      CABINET ABID EXPERTISE
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card class="welcome-card">
+    <img src="/assets/logo.png" alt="" (click)="openUrl()" />
+    <ion-card-header>
+      <ion-card-title (click)="openUrl()">visiter notre site web</ion-card-title>
+    </ion-card-header>
+    <ion-card-content style="max-height: 100px; overflow-y: scroll;">
+
+      <p>
+        L’équipe du cabinet ABID EXPERTISE COMPTABLE–AUDIT & CONSEILS rassemble des professionnels expérimentés,
+        dynamiques, compétents et totalement engagés dans différents métiers.
+
+        Notre intervention dans différents secteurs d’activités nous permet aujourd’hui de déployer des expertises
+        spécifiques adossées à un savoir-faire largement éprouvé dans nos différents métiers : comptabilité, fiscalité,
+        juridique, commissariat aux apports…
+
+        Partenaire de votre entreprise, notre cabinet est à votre disposition pour vous accompagner quotidiennement,
+        orienter vos choix stratégiques et vous apporter des réponses pertinentes à vos différents besoins et exigences.
+      </p>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card class="welcome-card">
+    <ion-card-header style="text-align: center;">
+      <ion-card-title style="color: red;">Notre mission</ion-card-title>
+    </ion-card-header>
+    <ion-card-content style="max-height: 100px; overflow-y: scroll;">
+
+      <p>
+        Notre cabinet met à votre disposition un savoir-faire reconnu en matière financière, fiscale, sociale,
+        juridique, informatique et de gestion.
+      </p>
+      <button type="button" class="btn btn-info" (click)="toContact()">...voir plus</button>
+    </ion-card-content>
+
+    <ion-card-header style="text-align: center;">
+      <ion-card-title style="color: red;">Notre vision</ion-card-title>
+    </ion-card-header>
+    <ion-card-content style="max-height: 100px; overflow-y: scroll;">
+
+      <p>
+        En tant que partenaire privilégié des chefs d’entreprise, notre vision ne se limite pas à la vérification des
+        comptes. Mais s’élargie pour intégrer de la gestion du personnel aux questions juridiques en passant par la
+        rédaction des contrats ou la gestion de la paie.
+      </p>
+      <button type="button" class="btn btn-info" (click)="toContact()">...voir plus</button>
+    </ion-card-content>
+
+    <ion-card-header style="text-align: center;">
+      <ion-card-title style="color: red;">Nos valeurs </ion-card-title>
+    </ion-card-header>
+    <ion-card-content style="max-height: 100px; overflow-y: scroll;">
+
+      <p>
+        AB fédère ses collaborateurs et ses clients autour de trois principes éthiques : l’intégrité, l’indépendance et
+        la transparence
+      </p>
+      <button type="button" class="btn btn-info" (click)="toContact()">...voir plus</button>
+    </ion-card-content>
+  </ion-card>
+
+
+
+  <app-profolio></app-profolio>
+
+
+  <!--
+  <ion-content overflow-scroll="true" X-Frame-Options="sameorigin">
+    <ion-card>
+        <ion-card-content>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3306.0585651675005!2d-5.000480985068174!3d34.04236878060859!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd9f8bf8ae3cc4a1%3A0x3b660eee9ef78828!2sCabinet%20ABID%20EXPERTISE%20COMPTABLE%20%E2%80%93%20AUDIT%20%26%20CONSEILS!5e0!3m2!1sen!2sma!4v1570797780496!5m2!1sen!2sma"
+        width="100%" height="400" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+      </ion-card-content>
+    </ion-card>
+  </ion-content>
+-->
+<!-- 
+  <ion-list lines="none">
+    <ion-list-header>
+      <ion-label>Resources</ion-label>
+    </ion-list-header>
+    <ion-item href="https://isthmaroc.com">
+      <ion-icon slot="start" color="medium" name="book"></ion-icon>
+      <ion-label>Ionic Documentation</ion-label>
+    </ion-item>
+    <ion-item href="https://ionicframework.com/docs/building/scaffolding">
+      <ion-icon slot="start" color="medium" name="build"></ion-icon>
+      <ion-label>Scaffold Out Your App</ion-label>
+    </ion-item>
+    <ion-item href="https://ionicframework.com/docs/layout/structure">
+      <ion-icon slot="start" color="medium" name="grid"></ion-icon>
+      <ion-label>Change Your App Layout</ion-label>
+    </ion-item>
+    <ion-item href="https://ionicframework.com/docs/theming/basics">
+      <ion-icon slot="start" color="medium" name="color-fill"></ion-icon>
+      <ion-label>Theme Your App</ion-label>
+    </ion-item>
+  </ion-list>
+  -->
+</ion-content>
